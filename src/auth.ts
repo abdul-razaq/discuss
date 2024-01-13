@@ -10,7 +10,7 @@ if (!GITHUB_CLIENT_ID || !GITHUB_CLIENT_SECRET) {
 	throw new Error('Missing or invalid github oauth credentials');
 }
 
-const {
+export const {
 	handlers: { GET, POST },
 	auth,
 	signIn,
