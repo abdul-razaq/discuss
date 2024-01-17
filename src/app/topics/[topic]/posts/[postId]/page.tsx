@@ -1,5 +1,5 @@
 import React from 'react';
 
-export default function TopicPostID() {
-	return <div>TopicPostID</div>;
+export default function PostIDPage() {
+	return <div>PostIDPage</div>;
 }
