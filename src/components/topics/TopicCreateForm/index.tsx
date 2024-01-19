@@ -13,6 +13,7 @@ import {
 import { useFormState } from 'react-dom';
 
 import * as actions from '@/actions';
+import FormButton from '@/components/Common/FormButton';
 
 export default function TopicCreateForm() {
 	const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -73,13 +74,7 @@ export default function TopicCreateForm() {
 										{formState.errors._form?.join(', ')}
 									</p>
 								)}
-								<Button
-									type="submit"
-									color="primary"
-									className="text-xl font-sans font-medium text-white"
-								>
-									Submit
-								</Button>
+								<FormButton>Button</FormButton>
 							</div>
 						</form>
 					</ModalBody>
